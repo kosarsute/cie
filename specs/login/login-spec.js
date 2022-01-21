@@ -17,7 +17,7 @@ describe('Login', () => {
         expect(Login.$ageHeader.getText()).to.equal('Nov 11, 2000 | Male')
         Appointment.$scheduleVaccineAppointmentBtn.click()
         Appointment.SelectAppointmentDate('Friday\nJan 21, 2022')
-        Appointment.SelectAppointmentTime('query_builder 1:00 AM')
+        Appointment.SelectAppointmentTime('query_builder 2:15 PM')
         Appointment.$scheduleAppointmentBtn.click()
         Appointment.$closeConfirmationBtn.click()
         Appointment.$cancelAppointmentBtn.click()
