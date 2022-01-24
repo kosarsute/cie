@@ -28,9 +28,9 @@ SelectAppointmentDate(date) {
         return this.$$appointmentDateBtn.map((elem) => elem.isDisplayed()).length > 1;
     }, { timeout: 10000, timeoutMsg: 'Not all elements were visible' });
     this.$$appointmentDateBtn.forEach(element => {
-        appointmentDate[element.getText()] = element;
+        appointmentDate[element.getText().split('\n')[1]] = element;
     });
-    //console.log(Object.keys(appointmentDate))
+   // console.log(Object.keys(appointmentDate))
     appointmentDate[date].click();
 }
 
